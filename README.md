@@ -46,7 +46,7 @@ ls
 
 * `requirements.txt`: a file for used python libraries.
 * `config.json`: a configration file that stores API keys and some other parameters.
-* `teapi.py`: this module provides a higher level abstraction class that allows you to query the ThousandEyes API (same as before).
+* `teapi.py`: This module provides a higher level abstraction class that allows you to query the ThousandEyes API. Compared to standard urllib3 it provides a few advantages, such as transparent handling of throttling mechanisms. This is not a Python file that we will run directly, we will import it as module in the others.
 * `thousandeyes_umbrella.py`: this script can be triggered and passed a domain. It will then block the domain with Umbrella and verify the enforcement using ThousandEyes. It will then report back via Webex Teams. 
 
 3. As you can see, the magic happens in `thousandeyes_umbrella.py`. Let's start using this script! Open this up in you favorite code editor and scroll to `line 172`. As you can see the steps that the script takes are shown here. It calls various Python functions, which we will walk through now.
