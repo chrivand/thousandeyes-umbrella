@@ -1,6 +1,6 @@
-# Umbrella and ThousandEyes integration 
+# Umbrella and ThousandEyes integration (SASE)
 
-The goal of the integration is to test whether the policies of Umbrella are being enforced. This verification is done by Cisco ThousandEyes (using instant HTTP tests).
+The goal of the integration is to test whether the policies of Umbrella are being enforced. This verification is done by Cisco ThousandEyes (using instant HTTP tests). This is important for multiple reasons. First of all, an analyst can check whether a potential harmfull destination is reachable, and thus can cause a threat (e.g. a Command&Control server). Second it can also be used to verify the policy enforcement across your organization. Cisco ThousandEyes can for example be used to verify a domain block in Cisco Umbrella, offering a good SASE use case. Obviously there are more use cases that this is usefull for.
 
 ## Features
 * Searches for group_id of agents to start instant test from;
